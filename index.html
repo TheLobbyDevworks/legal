@@ -1,0 +1,308 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>The Lobby Devworks Legal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: indigo brand band echoing the logo, then one readable column with a sticky Terms / Privacy switcher; per-product privacy entries as bordered sections */
+:root {
+  --brand: #2a2380;        /* logo indigo, right edge */
+  --brand-from: #26223f;   /* logo gradient, left edge */
+  --brand-ink: #f4f3fb;    /* type on the indigo band */
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --fg: #1d1c2e;
+  --muted: #5d5b74;
+  --line: #dcdbe8;
+  --accent: #3d37a8;
+  --font-display: "Raleway", "Century Gothic", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --brand: #2a2380; --brand-from: #26223f; --brand-ink: #ecebfa; --bg: #12121c; --surface: #1a1a27;
+    --fg: #e7e6f2; --muted: #a3a1bd; --line: #2e2d44; --accent: #a9a4ff; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --brand: #2a2380; --brand-from: #26223f; --brand-ink: #ecebfa; --bg: #12121c; --surface: #1a1a27;
+  --fg: #e7e6f2; --muted: #a3a1bd; --line: #2e2d44; --accent: #a9a4ff; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--brand);
+}
+.wrap {
+  max-width: 760px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Brand band */
+.band { background: linear-gradient(90deg, var(--brand-from), var(--brand)); color: var(--brand-ink); }
+.band .wrap { padding-block: 44px 36px; display: grid; gap: 18px; }
+.logo { width: 132px; height: auto; display: block; }
+.band h1 {
+  font-family: var(--font-display); font-weight: 400; font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.15; margin: 8px 0 0; text-wrap: balance;
+}
+.band p { margin: 0; max-width: 60ch; opacity: 0.85; }
+
+/* Switcher */
+.switch {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.switch .wrap { display: flex; gap: 4px; padding-block: 10px; }
+.switch a {
+  font-family: var(--font-display); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); text-decoration: none; padding: 8px 14px; border-radius: 999px;
+}
+.switch a:hover { color: var(--fg); }
+.switch a[aria-current="true"] { background: var(--brand); color: var(--brand-ink); }
+.switch a:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Documents */
+main .wrap { padding-block: 36px 64px; display: grid; gap: 56px; }
+article { scroll-margin-top: calc(64px + env(safe-area-inset-top, 0px)); min-width: 0; }
+.eyebrow {
+  font-family: var(--font-display); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 6px;
+}
+article h2 {
+  font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.2;
+  margin: 0 0 6px; text-wrap: balance;
+}
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; font-variant-numeric: tabular-nums; }
+article h3 { font-size: 17px; font-weight: 600; margin: 32px 0 8px; }
+article p, article li { max-width: 68ch; }
+article ul { padding-left: 1.2em; margin: 8px 0; display: grid; gap: 4px; }
+article a { color: var(--accent); }
+.summary {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 16px 18px; margin: 0 0 8px;
+}
+.summary p { margin: 0; }
+
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-scroll { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font-weight: 600; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+.contact {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+}
+.contact code { font-family: var(--font-mono); font-size: 15px; user-select: all; word-break: break-all; }
+.contact button {
+  font: 500 13px var(--font-body); color: var(--accent); background: transparent;
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer;
+}
+.contact button:hover { border-color: var(--accent); }
+
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer .wrap { padding-block: 20px 32px; }
+
+.products { display: grid; gap: 14px; margin: 12px 0; }
+.product { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; min-width: 0; scroll-margin-top: calc(64px + env(safe-area-inset-top, 0px)); }
+.product h4 { font-family: var(--font-display); font-weight: 500; font-size: 20px; margin: 0; }
+.product .kind { color: var(--muted); font-size: 14px; margin: 2px 0 12px; }
+.product .table-scroll { background: var(--bg); }
+.product p { margin: 10px 0 0; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.toc a { font-size: 14px; text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; color: var(--accent); }
+.toc a:hover { border-color: var(--accent); }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <img class="logo" src="logo-white.png" alt="The Lobby Devworks" width="543" height="640">
+    <h1>Terms &amp; Privacy</h1>
+    <p>The rules and privacy practices for every Discord bot, app and tool made by The Lobby Devworks.</p>
+  </div>
+</header>
+
+<nav class="switch" aria-label="Documents">
+  <div class="wrap">
+    <a href="#terms" id="tab-terms" aria-current="true">Terms of Service</a>
+    <a href="#privacy" id="tab-privacy">Privacy Policy</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <article id="terms" aria-labelledby="terms-h">
+      <p class="eyebrow">Document 1</p>
+      <h2 id="terms-h">Terms of Service</h2>
+      <p class="meta">Effective October 18, 2026</p>
+
+      <div class="summary"><p>In short: our projects are provided free and as is. Use them within Discord's rules and the rules of the server you're in.</p></div>
+
+      <h3>1. About these terms</h3>
+      <p>These terms apply to every Discord bot, app, website and tool made by The Lobby Devworks ("we", "us"), together called "the Services". The products currently covered are listed in the <a href="#products">Privacy Policy</a>. By adding one of our bots to a server, or by using any of the Services, you agree to these terms. If you don't agree, stop using the Service and remove any bot from your server.</p>
+
+      <h3>2. Using the Services</h3>
+      <ul>
+        <li>Follow Discord's <a href="https://discord.com/terms" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener">Community Guidelines</a> whenever you use our bots.</li>
+        <li>Only change a bot's settings in servers where you're allowed to manage it.</li>
+        <li>Don't abuse, overload, reverse-engineer or disrupt the Services or the platforms they rely on.</li>
+        <li>Don't use the Services to spam, harass or mass-mention people, or to break your server's rules.</li>
+      </ul>
+
+      <h3>3. Content from other sources</h3>
+      <p>Some Services show content from other platforms, such as game announcements from Steam. That content belongs to its owners. We don't endorse it and aren't affiliated with those platforms unless we say so. Where a Service uses AI to summarize or generate text, the result can contain mistakes. Check the original source when it matters.</p>
+
+      <h3>4. Availability and changes</h3>
+      <p>The Services are free and provided "as is" and "as available". We may change, pause or stop any Service at any time, with or without notice. Changes made by Discord or other platforms may also affect how a Service works.</p>
+
+      <h3>5. No warranty and limitation of liability</h3>
+      <p>To the fullest extent the law allows, we make no warranties about the Services, including that they will be accurate, uninterrupted or error-free. We are not liable for any indirect, incidental or consequential damages arising from your use of the Services.</p>
+
+      <h3>6. Ending use</h3>
+      <p>You can stop using a Service at any time, for example by removing a bot from your server. We may block any server or user from a Service if these terms are broken.</p>
+
+      <h3>7. Changes to these terms</h3>
+      <p>We may update these terms. The date at the top shows the latest version. Continuing to use the Services after a change means you accept the updated terms.</p>
+
+      <h3>8. Governing law</h3>
+      <p>These terms are governed by the laws of the Province of British Columbia and the federal laws of Canada that apply there.</p>
+
+      <h3>9. Contact</h3>
+      <p>Questions about these terms can be sent to the email at the end of the Privacy Policy.</p>
+    </article>
+
+    <article id="privacy" aria-labelledby="privacy-h">
+      <p class="eyebrow">Document 2</p>
+      <h2 id="privacy-h">Privacy Policy</h2>
+      <p class="meta">Effective October 18, 2026</p>
+
+      <div class="summary"><p>In short: each product stores only what it needs to work, which is listed below. We never sell data or use it for advertising.</p></div>
+
+      <h3>1. Our approach</h3>
+      <ul>
+        <li>Each product collects only the data it needs to do its job.</li>
+        <li>We never sell, rent or trade data, and we don't use it for advertising.</li>
+        <li>Our bots don't read or store your messages unless a product's section below says so and explains why.</li>
+        <li>When you use a slash command, Discord tells the bot who used it so it can check permissions. Unless a product's section says otherwise, that is used in the moment and not saved.</li>
+      </ul>
+
+      <h3 id="products">2. What each product stores</h3>
+      <ul class="toc" aria-label="Products">
+        <li><a href="#announcer">The Lobby Announcer</a></li>
+      </ul>
+
+      <div class="products">
+        <section class="product" id="announcer" aria-labelledby="announcer-h">
+          <h4 id="announcer-h">The Lobby Announcer</h4>
+          <p class="kind">Discord bot that posts Steam game announcements to a chosen channel</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Data</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr><td>Server (guild) ID</td><td>To know which server a setting belongs to</td></tr>
+                <tr><td>Channel ID and role ID chosen by admins</td><td>To post in the right channel and mention the right role</td></tr>
+                <tr><td>Steam App ID and game name</td><td>To know which games to check</td></tr>
+                <tr><td>IDs and dates of announcements already posted</td><td>To avoid posting the same update twice</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Shared with:</strong> Anthropic receives the text of public Steam announcements so it can write short summaries. No server or member information is sent. Steam is only read from; nothing about you is sent to it.</p>
+          <p><strong>Deleting it:</strong> admins can remove a game with the <strong>Remove</strong> button in <code>/updates</code>. To delete everything stored for a server, email us.</p>
+        </section>
+      </div>
+
+      <h3>3. Services we rely on</h3>
+      <ul>
+        <li><strong>Discord</strong> runs the platform our bots live on. Its <a href="https://discord.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> covers your use of Discord.</li>
+        <li><strong>Anthropic</strong> provides AI features in some products. Only the content listed in that product's section is sent. See Anthropic's <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</li>
+        <li><strong>Hosting providers</strong> run our bots and store the data listed above.</li>
+        <li>Other platforms a product reads from, such as Steam, are named in that product's section.</li>
+      </ul>
+
+      <h3>4. How long we keep it</h3>
+      <p>We keep data only while a product needs it, as described in its section. If you remove a bot from your server and want its stored data deleted, email us and we'll delete it within 30 days.</p>
+
+      <h3>5. Security</h3>
+      <p>Data is stored on private servers that only our team can access. No storage method is perfectly secure, so we keep the data we hold to a minimum.</p>
+
+      <h3>6. Children</h3>
+      <p>Our Services are meant for use on Discord, which has its own minimum age requirements. We don't knowingly collect personal information from children.</p>
+
+      <h3>7. Your rights</h3>
+      <p>Depending on where you live, you may have the right to ask what data we hold about you or your server, and to have it corrected or deleted. Email us and we'll respond within 30 days.</p>
+
+      <h3>8. New products and changes</h3>
+      <p>When we launch a new product or change what one collects, we add or update its section above and change the date at the top.</p>
+
+      <h3>9. Contact</h3>
+      <p>The Lobby Devworks. For privacy questions or deletion requests, email:</p>
+      <div class="contact">
+        <code id="email">jeremiakenneth@gmail.com</code>
+        <button type="button" id="copy-email">Copy email</button>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 The Lobby Devworks. Not affiliated with Discord or Valve.</div>
+</footer>
+
+<script>
+(function () {
+  var tabs = { terms: document.getElementById('tab-terms'), privacy: document.getElementById('tab-privacy') };
+  function mark(id) {
+    Object.keys(tabs).forEach(function (k) { tabs[k].setAttribute('aria-current', k === id ? 'true' : 'false'); });
+  }
+  function goTo(id, smooth) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+    mark(id);
+  }
+  var start = (location.hash || '').replace('#', '');
+  if (start && document.getElementById(start)) {
+    window.addEventListener('load', function () { var el = document.getElementById(start); el.scrollIntoView({ block: 'start' }); mark(start === 'terms' ? 'terms' : 'privacy'); });
+  }
+  Object.keys(tabs).forEach(function (k) {
+    tabs[k].addEventListener('click', function (e) { e.preventDefault(); goTo(k, true); });
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) mark(en.target.id); });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    io.observe(document.getElementById('terms'));
+    io.observe(document.getElementById('privacy'));
+  }
+
+  var btn = document.getElementById('copy-email');
+  var code = document.getElementById('email');
+  btn.addEventListener('click', function () {
+    var text = code.textContent;
+    function selectIt() {
+      var r = document.createRange(); r.selectNodeContents(code);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Selected, press Ctrl+C';
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    } catch (e) { selectIt(); }
+    setTimeout(function () { btn.textContent = 'Copy email'; }, 2500);
+  });
+})();
+</script>
+
+</body></html>
