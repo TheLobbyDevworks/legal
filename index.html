@@ -146,7 +146,7 @@ footer .wrap { padding-block: 20px 32px; }
     <article id="terms" aria-labelledby="terms-h">
       <p class="eyebrow">Document 1</p>
       <h2 id="terms-h">Terms of Service</h2>
-      <p class="meta">Effective October 18, 2026</p>
+      <p class="meta">Effective October 19, 2026</p>
 
       <div class="summary"><p>In short: our projects are provided free and as is. Use them within Discord's rules and the rules of the server you're in.</p></div>
 
@@ -162,7 +162,7 @@ footer .wrap { padding-block: 20px 32px; }
       </ul>
 
       <h3>3. Content from other sources</h3>
-      <p>Some Services show content from other platforms, such as game announcements from Steam. That content belongs to its owners. We don't endorse it and aren't affiliated with those platforms unless we say so. Where a Service uses AI to summarize or generate text, the result can contain mistakes. Check the original source when it matters.</p>
+      <p>Some Services show content from other platforms, such as game announcements from Steam, anime listings from AniList or articles from news sites. That content belongs to its owners. We don't endorse it and aren't affiliated with those platforms unless we say so. Where a Service uses AI to summarize or generate text, the result can contain mistakes. Check the original source when it matters.</p>
 
       <h3>4. Availability and changes</h3>
       <p>The Services are free and provided "as is" and "as available". We may change, pause or stop any Service at any time, with or without notice. Changes made by Discord or other platforms may also affect how a Service works.</p>
@@ -186,7 +186,7 @@ footer .wrap { padding-block: 20px 32px; }
     <article id="privacy" aria-labelledby="privacy-h">
       <p class="eyebrow">Document 2</p>
       <h2 id="privacy-h">Privacy Policy</h2>
-      <p class="meta">Effective October 18, 2026</p>
+      <p class="meta">Effective October 19, 2026</p>
 
       <div class="summary"><p>In short: each product stores only what it needs to work, which is listed below. We never sell data or use it for advertising.</p></div>
 
@@ -201,25 +201,45 @@ footer .wrap { padding-block: 20px 32px; }
       <h3 id="products">2. What each product stores</h3>
       <ul class="toc" aria-label="Products">
         <li><a href="#announcer">The Lobby Announcer</a></li>
+        <li><a href="#service">Lobby Service</a></li>
       </ul>
 
       <div class="products">
         <section class="product" id="announcer" aria-labelledby="announcer-h">
           <h4 id="announcer-h">The Lobby Announcer</h4>
-          <p class="kind">Discord bot that posts Steam game announcements to a chosen channel</p>
+          <p class="kind">Discord bot that posts game updates, anime episode alerts, redeem codes and news to chosen channels</p>
           <div class="table-scroll">
             <table>
               <thead><tr><th>Data</th><th>Why</th></tr></thead>
               <tbody>
                 <tr><td>Server (guild) ID</td><td>To know which server a setting belongs to</td></tr>
-                <tr><td>Channel ID and role ID chosen by admins</td><td>To post in the right channel and mention the right role</td></tr>
-                <tr><td>Steam App ID and game name</td><td>To know which games to check</td></tr>
-                <tr><td>IDs and dates of announcements already posted</td><td>To avoid posting the same update twice</td></tr>
+                <tr><td>Channel and role IDs chosen by admins</td><td>To post in the right channel and mention the right role</td></tr>
+                <tr><td>The games, shows and news feeds a server follows</td><td>To know what to check</td></tr>
+                <tr><td>IDs and dates of items already posted, and redeem codes seen</td><td>To avoid posting the same thing twice and to mark expired codes</td></tr>
+                <tr><td>Game or show requests: the member's user ID, what they asked for, any note they wrote, and how staff handled it</td><td>To show the request to staff and tell the member the result</td></tr>
               </tbody>
             </table>
           </div>
-          <p><strong>Shared with:</strong> Anthropic receives the text of public Steam announcements so it can write short summaries. No server or member information is sent. Steam is only read from; nothing about you is sent to it.</p>
-          <p><strong>Deleting it:</strong> admins can remove a game with the <strong>Remove</strong> button in <code>/updates</code>. To delete everything stored for a server, email us.</p>
+          <p><strong>Shared with:</strong> Anthropic receives the text of public announcements and articles so it can write short summaries. No server or member information is sent. Steam, HoYoLAB, Mojang, AniList, community code trackers and news sites are only read from; nothing about you is sent to them.</p>
+          <p><strong>Deleting it:</strong> admins can remove a feed with the <strong>Remove</strong> button in <code>/announce</code>. To delete everything stored for a server, or your own requests, email us.</p>
+        </section>
+
+        <section class="product" id="service" aria-labelledby="service-h">
+          <h4 id="service-h">Lobby Service</h4>
+          <p class="kind">Discord bot for private support tickets: questions, reports and problems</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Data</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr><td>Server ID, and the ticket channel, transcript channel and staff roles chosen by admins</td><td>To open tickets in the right place and add the right staff</td></tr>
+                <tr><td>For each ticket: the member's user ID, topic, the staff member who claimed and closed it, the close reason, timestamps and an optional 1 to 5 rating</td><td>To run the ticket, limit open tickets per member and close quiet tickets</td></tr>
+                <tr><td>The messages written inside a ticket</td><td>When a ticket closes, they are saved as a transcript file in a staff-only channel of that server, so staff can look back at what happened</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Who can see it:</strong> a ticket is a private thread that only the member who opened it and the server's staff can see. Reports stay confidential: the reported member is never added to the ticket.</p>
+          <p><strong>Shared with:</strong> no one. Ticket messages are not sent to any AI service or third party. Transcripts are stored inside the server's own Discord channel.</p>
+          <p><strong>Deleting it:</strong> server staff can delete transcripts from their Discord channel at any time. To delete ticket records we store, email us.</p>
         </section>
       </div>
 
@@ -235,7 +255,7 @@ footer .wrap { padding-block: 20px 32px; }
       <p>We keep data only while a product needs it, as described in its section. If you remove a bot from your server and want its stored data deleted, email us and we'll delete it within 30 days.</p>
 
       <h3>5. Security</h3>
-      <p>Data is stored on private servers that only our team can access. No storage method is perfectly secure, so we keep the data we hold to a minimum.</p>
+      <p>Data is stored on private servers that only our team can access. Ticket transcripts are stored in the server's own Discord channel, where that server's staff control who can see them. No storage method is perfectly secure, so we keep the data we hold to a minimum.</p>
 
       <h3>6. Children</h3>
       <p>Our Services are meant for use on Discord, which has its own minimum age requirements. We don't knowingly collect personal information from children.</p>
@@ -249,7 +269,7 @@ footer .wrap { padding-block: 20px 32px; }
       <h3>9. Contact</h3>
       <p>The Lobby Devworks. For privacy questions or deletion requests, email:</p>
       <div class="contact">
-        <code id="email">jeremiakenneth@gmail.com</code>
+        <code id="email">thelobbydevworks@gmail.com</code>
         <button type="button" id="copy-email">Copy email</button>
       </div>
     </article>
