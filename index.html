@@ -202,6 +202,7 @@ footer .wrap { padding-block: 20px 32px; }
       <ul class="toc" aria-label="Products">
         <li><a href="#announcer">The Lobby Announcer</a></li>
         <li><a href="#service">Lobby Service</a></li>
+        <li><a href="#host">Lobby Host</a></li>
       </ul>
 
       <div class="products">
@@ -240,6 +241,25 @@ footer .wrap { padding-block: 20px 32px; }
           <p><strong>Who can see it:</strong> a ticket is a private thread that only the member who opened it and the server's staff can see. Reports stay confidential: the reported member is never added to the ticket.</p>
           <p><strong>Shared with:</strong> no one. Ticket messages are not sent to any AI service or third party. Transcripts are stored inside the server's own Discord channel.</p>
           <p><strong>Deleting it:</strong> server staff can delete transcripts from their Discord channel at any time. When the bot is removed from a server, its ticket records for that server are deleted automatically. To delete your own ticket records, email us.</p>
+        </section>
+
+        <section class="product" id="host" aria-labelledby="host-h">
+          <h4 id="host-h">Lobby Host</h4>
+          <p class="kind">Discord bot for giveaways</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Data</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr><td>Server ID, and the review channel and default look chosen by admins</td><td>To post giveaways and reviews in the right place</td></tr>
+                <tr><td>For each giveaway: the prize, details, image, rules, channel, end time and the staff member who started it</td><td>To show and run the giveaway</td></tr>
+                <tr><td>The user IDs of members who entered, when they entered, and who won</td><td>To pick winners fairly and let each member win only once</td></tr>
+                <tr><td>Accounts that staff marked as duplicate (alt) accounts, who marked them and when</td><td>To stop the same person entering giveaways with more than one account</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Who can see it:</strong> before winners are announced, the server's staff can see each winner's account age, join date and avatar status in a staff-only channel, to check for duplicate accounts. These details are read live from Discord and are not stored.</p>
+          <p><strong>Shared with:</strong> no one.</p>
+          <p><strong>Deleting it:</strong> the list of who entered and who won is deleted automatically 30 days after a giveaway ends. A duplicate-account mark stays until staff remove it. When the bot is removed from a server, everything it stored for that server is deleted automatically. To delete your own data, email us.</p>
         </section>
       </div>
 
